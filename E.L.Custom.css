@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:ital,wght@0,300;0,600;0,700;0,900;1,400&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(8, 73, 63));
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+h1 {
+  line-height: 3rem;
+  margin-top: 4rem;
+}
+
+/* Header */
+.main-header {
+  width: 100%;
+  height: 100vh;
+  background: url(Image/gmmk2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.header-top {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+}
+
+.header-top .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 9rem;
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 1.3rem;
+  margin: 0 0 2rem;
+}
+
+.header-content p {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.25rem;
+  margin: 2.5rem 2rem;
+}
+
+/* Nav Bar for Different Website */
+.NavBar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.NavBar a {
+  float: left;
+  display: block;
+  color: #fdfdfd;
+  text-align: center;
+  padding: 14px 71.5px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.NavBar a:hover {
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Nav Bar */
+#navbar {
+  background-color: #111111;
+  overflow: hidden;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 43.23px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sticky + .Content {
+  padding-top: 60px;
+}
+
+/* Section For All Section */
+
+.Content {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.Keyboard-Header-1 {
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.Keyboard-Header-2 {
+  margin-top: 2.3rem;
+  margin-bottom: 1.7rem;
+}
+
+/* Section = Keyboard Layout */
+
+.Keyboard-Description {
+  display: inline-block;
+  width: 44%;
+  vertical-align: top;
+  text-align: justify;
+  padding-right: 25px;
+}
+
+.Keyboard-Image {
+  display: inline-block;
+  width: 54%;
+}
+
+/* Section = Keyboard Swtiches*/
+
+.Switch-Gif {
+  width: 200px;
+  height: 200px;
+}
+
+.Profile {
+  width: 350px;
+  display: inline-block;
+  margin-right: 60px;
+  margin-top: 2rem;
+}
+
+/* Keyboards Parts Breakdown */
+.Parts-Information {
+  margin-bottom: 3rem;
+}
+
+.Image-Container {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  margin-right: 20px;
+}
+
+.Parts-Image {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.Part-Info {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  margin-top: 60px;
+}
+
+.Parts-Description {
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+
+/* Section = Gasket Mount Keyboard */
+.Mount-Gallery {
+  width: 550px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 60px;
+}
+
+.Mount-Image {
+  display: inline-block;
+  width: 100%;
+  height: 50%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Mount-Description h2 {
+  margin-bottom: 16px;
+}
+
+.Mount-Description p {
+  text-align: justify;
+}
+
+/* Section = PCB */
+.PCB-Gallery {
+  width: 550px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 60px;
+}
+
+.PCB-Image {
+  display: inline-block;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 1rem;
+}
+
+.PCB-Description h2 {
+  margin-bottom: 16px;
+}
+
+.PCB-Description p {
+  text-align: justify;
+}
+
+/* Section = KeyCaps */
+.KeyCaps-Description {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.KeyCaps-Image {
+  height: 100%;
+  width: 100%;
+}
+
+.KeyCaps-Container {
+  width: 550px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.KeyCaps-Text {
+  text-align: center;
+}
+
+/* Section = Plate */
+
+.Plate-Description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.Plate-Image {
+  max-width: 200px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  height: 50%;
+  width: 100%;
+}
+
+.Plate-Container {
+  width: 240px;
+  display: inline-block;
+  margin-right: 2.3px;
+  margin-left: 2.3px;
+  margin-top: 1rem;
+}
+
+.Plate-Text {
+  text-align: left;
+  margin-top: 5px;
+}
+
+/* Section = Some Modification */
+.Modification-Description {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  padding: 5px;
+  margin-top: 5rem;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer p {
+  color: rgb(202, 202, 202);
+}
